@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Train Scheduler</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1 class="display-3 ">Anytime is Train Time</h1>
+      <p class="lead">Choo Choo. Chee Chee.</p>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="card">
+      <div class="card-header">Current Train Schedule</div>
+
+      <div class="card-body">
+        <table class="table">
+          <thead class=schedule-head>
+            <tr>
+              <th scope="col">Train Name</th>
+              <th scope="col">Destination</th>
+              <th scope="col">Frequency (min)</th>
+              <th scope="col">Next Arrival</th>
+              <th scope="col">Minutes Away</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Butthole Express</td>
+              <td>Pound Town</td>
+              <td>60</td>
+              <td>4 PM</td>
+              <td>15 min</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">Add Train</div>
+      <div class="card-body">
+        <form>
+
+          <div class="form-group">
+            <label for="trainName">Train Name</label>
+            <input type="text" class="form-control" id="trainName" aria-describedby="trainNameHelp">
+          </div>
+
+          <div class="form-group">
+            <label for="destination">Destination</label>
+            <input type="text" class="form-control" id="destination" aria-describedby="destinationHelp">
+          </div>
+
+          <div class="form-group">
+            <label for="trainTime">First Train Time (HH:mm - military time)</label>
+            <input class="form-control" id="trainTime" aria-describedby="trainTimeHelp">
+          </div>
+
+          <div class="form-group">
+            <label for="frequency">Frequency (min)</label>
+            <input type="number" class="form-control" id="frequencyAmount" aria-describedby="frequencyHelp">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <br>
+  <br>
+
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="assets/javascript/main.js"></script>
+</body>
+
+</html>
