@@ -27,7 +27,7 @@ $('.btn-primary').on('click', function(event) {
     frequency = $('#frequency').val().trim();
 
     database.ref().push({
-        trainName: 'sdf',
+        trainName: trainName,
         destination: destination,
         firstTrainTime: firstTrainTime,
         frequency: frequency
