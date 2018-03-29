@@ -11,6 +11,8 @@
 </head>
 
 <body>
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
   <div class="container">
     <div class="jumbotron text-center">
       <h1 class="display-3 ">Anytime is Train Time</h1>
@@ -65,13 +67,13 @@
           </div>
 
           <div class="form-group">
-            <label for="trainTime">First Train Time (HH:mm - military time)</label>
-            <input class="form-control" id="trainTime" aria-describedby="trainTimeHelp">
+            <label for="firstTrainTime">First Train Time (HH:mm - military time)</label>
+            <input class="form-control" id="firstTrainTime" aria-describedby="firstTrainTimeHelp">
           </div>
 
           <div class="form-group">
             <label for="frequency">Frequency (min)</label>
-            <input type="number" class="form-control" id="frequencyAmount" aria-describedby="frequencyHelp">
+            <input type="number" class="form-control" id="frequency" aria-describedby="frequencyHelp">
           </div>
 
           <button type="submit" class="btn btn-primary">Submit</button>
@@ -86,7 +88,6 @@
   <br>
   <br>
 
-  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script src="assets/javascript/main.js"></script>
 </body>
